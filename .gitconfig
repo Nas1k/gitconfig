@@ -1,0 +1,70 @@
+[user]
+	name = Andriy Nasinnyk
+	email = anasinnyk@malkosua.com
+[alias]
+	s = status
+	b = branch
+	ba = branch -a -v -v
+	bs = !git-branch-status
+	bsi = !git-branch-status -i
+	ci = commit
+	co = checkout
+	
+	d = diff -C
+	ds = diff -C --stat
+	dsp = diff -C --stat -p
+	dw = diff -C --color-words
+	
+	l = log -C --decorate
+	ls = log -C --stat --decorate
+	lsp = log -C --stat -p --decorate
+	lg = log --graph '--pretty=tformat:%Cred%h%Creset %Cgreen(%ar)%Creset %Cblue%d%Creset %s %Cred%aN%Creset %Cblue<%aE>%Creset'
+	lga = log --graph '--pretty=tformat:%Cred%h%Creset %Cgreen(%ar)%Creset %Cblue%d%Creset %s %Cred%aN%Creset %Cblue<%aE>%Creset' --all
+	l19 = log --graph '--pretty=tformat:%Cred%h%Creset %Cgreen(%ar)%Creset %Cblue%d%Creset %s %Cred%aN%Creset %Cblue<%aE>%Creset' --all -19
+	lsd = log --graph '--pretty=tformat:%Cred%h%Creset %Cgreen(%ar)%Creset %Cblue%d%Creset %s %Cred%aN%Creset %Cblue<%aE>%Creset' --all --simplify-by-decoration
+
+	ru = remote update
+	sb = show-branch --sha1-name
+	ls-del = ls-files -d
+	ls-mod = ls-files -m
+	ls-new = ls-files --exclude-standard -o
+	ls-ign = ls-files --exclude-standard -o -i
+	ka = !gitk --all
+	kdo = !gitk --date-order
+	kado = !gitk --all --date-order
+	kasd = !gitk --all --simplify-by-decoration
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+	grep = auto
+	interactive = auto
+[color "diff"]
+	plain = normal
+	meta = bold
+	frag = cyan
+	old = red
+	new = green
+	commit = yellow
+	whitespace = normal red
+[color "branch"]
+	current = green
+	local = normal
+	remote = cyan
+	plain = normal
+[color "status"]
+	header = normal
+	added = blue
+	updated = yellow
+	changed = blue
+	untracked = normal
+	nobranch = red
+[color "grep"]
+	match = normal
+[color "interactive"]
+	prompt = normal
+	header = normal
+	help = normal
+	error = normal
+[merge]
+	tool = meld
