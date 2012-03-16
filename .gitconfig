@@ -1,6 +1,6 @@
 [user]
 	name = Andriy Nasinnyk
-	email = anasinnyk@malkosua.com
+	email = andriy.nas@gmail.com
 [alias]
 	s = status
 	b = branch
@@ -68,3 +68,5 @@
 	error = normal
 [merge]
 	tool = meld
+[core]
+	editor = vim
